@@ -48,11 +48,8 @@ public class FileUploadHandler extends HttpServlet{
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
 	    
-	    	
-	    	 String json="";
-		
-		
-			 
+	    	String json="";
+					 
 	        //process only if its multipart content
 	        if(ServletFileUpload.isMultipartContent(request)){
 	            try {
@@ -82,8 +79,7 @@ public class FileUploadHandler extends HttpServlet{
 	        }
 	      
 	        response.setContentType("application/json");
-			 response.getWriter().write(json);
-	     
+			 response.getWriter().write(json);	     
 	    }
 	
 }
@@ -98,7 +94,6 @@ function upload() {
 
     var fileUpload = $('#imageInput').get(0);
       
-    
     var files = fileUpload.files;
     
     var data = new FormData();
