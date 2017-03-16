@@ -41,10 +41,9 @@ public class FileUploadHandler extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
 	private final String UPLOAD_DIRECTORY = "<your directory>";
-	  
-	  
-	   
-	    @Override
+	 
+	 
+	 @Override
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
 	    
@@ -121,8 +120,6 @@ function upload() {
              $("#output").html("Error to upload file!!");
         }
     });
-
-   
 }
 
 ```
